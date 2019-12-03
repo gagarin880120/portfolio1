@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="body_wrapper">
+    <header class="header">
+      <div class="header--photo"></div>
+      <div class="header--text">
+        <h1 class="header--text--header">Andrei Mandryk</h1>
+        <ul class="header--list">
+          <li class="header--list--items"><a href="https://github.com/gagarin880120" class="header--list--links"><i class="fab fa-github"></i>Github</a></li>
+          <li class="header--list--items"><a href="https://t.me/gagarin880120" class="header--list--links"><i class="fab fa-telegram-plane"></i>Telegram</a></li>
+          <li class="header--list--items"><a href="mailto:gagarin880120@gmail.com" class="header--list--links"><i class="fas fa-envelope"></i>E-mail</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="education">
+        <div class="education--header--container" id="educationHeader">
+          <p class="education--header"><i class="fas fa-user-graduate"></i>Education</p><i class="fas fa-chevron-down"></i>
+        </div>
+          <div class="education--content">
+            <ul class="education--list">
+              <li class="education--list--item">Brest School №13 <br> 1998 - 2009</li>
+              <li class="education--list--item">Belarusian University of Culture and Arts (librarianship) <br> 2009 - 2013</li>
+              <li class="education--list--item">Rolling Scopes School <br> 2019 - 2020</li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="projects">
+        <div class="projects--header--container">
+          <p class="projects--header"><i class="fas fa-briefcase"></i>Projects</p>
+        </div>
+
+        <div class="slider">
+          <a class="slider--button" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+            <div class="slider--item">
+              <div class="slider--item--content">
+                <div class="slider--item--text">
+                  <p class="slider--item--header">theyalow</p>
+                  <ul class="slider--item--description">
+                    <li>mobile & desktop versions</li>
+                    <li>svg</li>
+                    <li>interactive elements</li>
+                  </ul>
+                  <div class="slider--item--hint">
+                    <p>Click on image<br>to see the project</p>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </div>
+                <a href="./projects/theyalow-project/index.html" class="slider--item--link"><img src="./assets/images/theyalow-desktop.png" alt="theyalow project (desktop version) screenshot" class="slider--item--image"></a>
+              </div>
+            </div>
+            <div class="slider--item">
+              <div class="slider--item--content">
+                <div class="slider--item--text">
+                  <p class="slider--item--header">repair-design-projects</p>
+                  <ul class="slider--item--description">
+                    <li>responsive</li>
+                    <li>sliders (but without JS)</li>
+                    <li>interactive elements</li>
+                  </ul>
+                <div class="slider--item--hint">
+                  <p>Click on image<br>to see the project</p>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                </div>
+                <a href="./projects/repair-design-project/index.html" class="slider--item--link"><img src="./assets/images/repair-desktop.png" alt="repair-design-project (desktop version) screenshot" class="slider--item--image"></a>
+              </div>
+            </div>
+          <a class="slider--button" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <div class="swiper" id="swiper">
+          <div class="swiper--wrapper">
+            <div class="swiper--slides" id="swiperSlides">
+
+              <div class="swiper--slide">
+                <div class="swiper--button--container">
+                  <span class="swiper--button--text">show description</span><button class="swiper--button"></button>
+                </div>
+                <div class="swiper--description">
+                  <p class="swiper--description--header">theyalow</p>
+                  <ul class="swiper--description--list">
+                    <li>mobile & desktop versions</li>
+                    <li>svg</li>
+                    <li>interactive elements</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/theyalow-mobile.png" alt="theyalow project (mobile version) screenshot" class="swiper--image">
+              </div>
+
+              <div class="swiper--slide">
+                <div class="swiper--button--container">
+                  <span class="swiper--button--text">show description</span><button class="swiper--button"></button>
+                </div>
+                <div class="swiper--description">
+                  <p class="swiper--description--header">repair-design-project</p>
+                  <ul class="swiper--description--list">
+                    <li>responsive</li>
+                    <li>sliders (but without JS)</li>
+                    <li>interactive elements</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/repair-mobile.png" alt="repair-design-project (mobile version) screenshot" class="swiper--image">
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper--text--container">
+            <ul class="swiper--projects--list">Links to projects:
+              <li><a href="./projects/theyalow-project/index.html" class="swiper--project--link">See theyalow project</a></li>
+              <li><a href="./projects/repair-design-project/index.html" class="swiper--project--link">See repair-design-project</a></li>
+            </ul>
+            <p class="swiper--text">swipe to see other</p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      Brest, 2019
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
